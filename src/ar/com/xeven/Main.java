@@ -11,30 +11,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<Impresora> hojasAImprimir = new ArrayList<>();
+        Impresora impresora = new Impresora();
 
-        Impresora h1 = new Impresora(5);
-        Impresora h2 = new Impresora(10);
-        Impresora h3 = new Impresora(11);
-
-
-
-        Impresora intervalo1 = new Impresora();
-        intervalo1.ingresarNumeros();
-        intervalo1.recorrerIntervalo();
+        impresora.ingresarPagina();
+        impresora.ingresarPagina();
+        impresora.ingresarNumeros();
+        impresora.recorrerIntervaloYAgregarPagina();
+        impresora.mostrarHojas();
 
 
-        hojasAImprimir.add(h1);
-        hojasAImprimir.add(h2);
-        hojasAImprimir.add(intervalo1.recorrerIntervalo());
-        hojasAImprimir.add(h3);
 
 
-        /*
-        System.out.println("\nQue paginas del libro desea imprimir: ");
-        for (Impresora pagina: hojasAImprimir)
-            System.out.print(pagina);
-
-         */
     }
 }
